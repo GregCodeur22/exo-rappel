@@ -1,0 +1,30 @@
+.container{
+    border: 1px solid black;
+    max-width: 40%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50px repeat(5, 30px);
+    border-radius: 2px solid rgb(0, 0, 0);
+    grid-template-areas: 
+    "res res res res"
+    "9 8 7 clear"
+    "6 5 4 clear"
+    "3 2 1 clear"
+    "0 . plus minus"
+    "equal equal div time ";
+}
+
+.result{
+    grid-area: res;
+    text-align: right;
+    margin: 1.1rem;
+}
+
+#equal{
+    grid-area: equal;
+}
+
+#clear{
+    grid-area: clear;
+}
